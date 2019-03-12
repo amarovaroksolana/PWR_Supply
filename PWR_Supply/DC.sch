@@ -1,0 +1,118 @@
+EESchema Schematic File Version 4
+LIBS:PWR_Supply-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 7
+Title ""
+Date "2019-03-12"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x05 J6
+U 1 1 5C85B429
+P 5650 3900
+F 0 "J6" H 5729 3942 50  0000 L CNN
+F 1 "  " H 5729 3851 50  0000 L CNN
+F 2 "" H 5650 3900 50  0001 C CNN
+F 3 "~" H 5650 3900 50  0001 C CNN
+	1    5650 3900
+	1    0    0    -1  
+$EndComp
+Text HLabel 5250 3800 0    50   Input ~ 0
++5
+Text HLabel 5250 3700 0    50   Input ~ 0
++3.3
+Text HLabel 5250 3900 0    50   Input ~ 0
++9
+Text HLabel 5250 4000 0    50   Input ~ 0
++12
+Text HLabel 5250 4100 0    50   Input ~ 0
+GND
+$Comp
+L power:PWR_FLAG #FLG0109
+U 1 1 5C8E4AF3
+P 5350 3700
+F 0 "#FLG0109" H 5350 3775 50  0001 C CNN
+F 1 "PWR_FLAG" H 4650 3700 50  0000 C CNN
+F 2 "" H 5350 3700 50  0001 C CNN
+F 3 "~" H 5350 3700 50  0001 C CNN
+	1    5350 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3700 5450 3700
+$Comp
+L power:PWR_FLAG #FLG0110
+U 1 1 5C8E537F
+P 5400 3800
+F 0 "#FLG0110" H 5400 3875 50  0001 C CNN
+F 1 "PWR_FLAG" H 4650 3800 50  0000 C CNN
+F 2 "" H 5400 3800 50  0001 C CNN
+F 3 "~" H 5400 3800 50  0001 C CNN
+	1    5400 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3800 5450 3800
+$Comp
+L power:PWR_FLAG #FLG0111
+U 1 1 5C8E538E
+P 5350 3900
+F 0 "#FLG0111" H 5350 3975 50  0001 C CNN
+F 1 "PWR_FLAG" H 4650 3900 50  0000 C CNN
+F 2 "" H 5350 3900 50  0001 C CNN
+F 3 "~" H 5350 3900 50  0001 C CNN
+	1    5350 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0112
+U 1 1 5C8E539D
+P 5400 4000
+F 0 "#FLG0112" H 5400 4075 50  0001 C CNN
+F 1 "PWR_FLAG" H 4650 4000 50  0000 C CNN
+F 2 "" H 5400 4000 50  0001 C CNN
+F 3 "~" H 5400 4000 50  0001 C CNN
+	1    5400 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0113
+U 1 1 5C8E53D1
+P 5350 4100
+F 0 "#FLG0113" H 5350 4175 50  0001 C CNN
+F 1 "PWR_FLAG" H 4650 4100 50  0000 C CNN
+F 2 "" H 5350 4100 50  0001 C CNN
+F 3 "~" H 5350 4100 50  0001 C CNN
+	1    5350 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3900 5450 3900
+Wire Wire Line
+	5400 4000 5450 4000
+Wire Wire Line
+	5350 4100 5450 4100
+Connection ~ 5350 3700
+Wire Wire Line
+	5250 3700 5350 3700
+Connection ~ 5400 3800
+Wire Wire Line
+	5250 3800 5400 3800
+Connection ~ 5350 3900
+Wire Wire Line
+	5250 3900 5350 3900
+Connection ~ 5400 4000
+Wire Wire Line
+	5250 4000 5400 4000
+Connection ~ 5350 4100
+Wire Wire Line
+	5250 4100 5350 4100
+$EndSCHEMATC
