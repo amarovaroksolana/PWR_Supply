@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:PWR_Supply-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -17,33 +16,16 @@ $EndDescr
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5C852B75
-P 3450 3950
-F 0 "J1" H 3450 3700 50  0000 C CNN
-F 1 "  " H 3370 3716 50  0000 C CNN
-F 2 "" H 3450 3950 50  0001 C CNN
-F 3 "~" H 3450 3950 50  0001 C CNN
-	1    3450 3950
+P 2950 3950
+F 0 "J1" H 3100 3900 50  0000 C CNN
+F 1 "  " H 2870 3716 50  0000 C CNN
+F 2 "" H 2950 3950 50  0001 C CNN
+F 3 "~" H 2950 3950 50  0001 C CNN
+	1    2950 3950
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:Transformer_1P_1S T1
-U 1 1 5C852C7E
-P 4250 3900
-F 0 "T1" H 4250 4250 50  0000 C CNN
-F 1 "  " H 4250 4187 50  0000 C CNN
-F 2 "" H 4250 3900 50  0001 C CNN
-F 3 "~" H 4250 3900 50  0001 C CNN
-	1    4250 3900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3650 3850 3650 3700
-Wire Wire Line
-	3650 3700 3850 3700
-Wire Wire Line
-	3650 3950 3650 4100
-Wire Wire Line
-	3650 4100 3850 4100
+	3150 3850 3150 3700
 $Comp
 L Device:D_Bridge_+-AA D1
 U 1 1 5C853036
@@ -55,14 +37,6 @@ F 3 "~" H 5200 3900 50  0001 C CNN
 	1    5200 3900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4650 4200 5200 4200
-Wire Wire Line
-	4650 4100 4650 4200
-Wire Wire Line
-	4650 3700 4650 3600
-Wire Wire Line
-	4650 3600 5200 3600
 Wire Wire Line
 	5500 3900 5800 3900
 $Comp
@@ -86,41 +60,45 @@ Connection ~ 5800 3900
 Connection ~ 5800 4450
 Wire Wire Line
 	4900 4450 5800 4450
-Text HLabel 6650 4000 1    50   Input ~ 0
+Text HLabel 6600 3900 2    50   Input ~ 0
 VCC
-Text HLabel 6650 4400 3    50   Input ~ 0
+Text HLabel 6600 4450 2    50   Input ~ 0
 GND
 Wire Wire Line
-	6450 3900 6450 4150
+	5800 3900 6600 3900
 Wire Wire Line
-	5800 3900 6450 3900
-Wire Wire Line
-	6450 4150 6650 4150
-Wire Wire Line
-	6450 4450 6450 4250
-Wire Wire Line
-	5800 4450 6450 4450
-Wire Wire Line
-	6450 4250 6650 4250
-Connection ~ 6650 4250
-Wire Wire Line
-	6650 4250 6750 4250
-Connection ~ 6650 4150
-Wire Wire Line
-	6650 4150 6750 4150
-Wire Wire Line
-	6650 4000 6650 4150
+	5800 4450 6600 4450
 $Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5C86D108
-P 6950 4150
-F 0 "J2" H 7030 4142 50  0000 L CNN
-F 1 "Conn_01x02" H 7030 4051 50  0000 L CNN
-F 2 "" H 6950 4150 50  0001 C CNN
-F 3 "~" H 6950 4150 50  0001 C CNN
-	1    6950 4150
+L Device:Transformer_1P_1S T1
+U 1 1 5C90E86E
+P 3850 3900
+F 0 "T1" H 3850 4350 50  0000 C CNN
+F 1 "n2/n1=3:55;k=0,055" H 3850 4250 50  0000 C CNN
+F 2 "" H 3850 3900 50  0001 C CNN
+F 3 "https://www.dx.com/p/5va-50hz-220v-to-12v-417ma-transformer-golden-yellow-cable-length-10cm-2042964" H 3850 3900 50  0001 C CNN
+	1    3850 3900
 	1    0    0    -1  
 $EndComp
+Text Label 3450 3700 2    50   ~ 0
+U1:220V
+Text Label 4350 3700 0    50   ~ 0
+U2:12V
 Wire Wire Line
-	6650 4250 6650 4400
+	3150 3950 3150 4100
+Wire Wire Line
+	4250 3700 4350 3700
+Wire Wire Line
+	3150 3700 3450 3700
+Wire Wire Line
+	3150 4100 3450 4100
+Wire Wire Line
+	4350 3700 4350 3600
+Wire Wire Line
+	4350 3600 5200 3600
+Wire Wire Line
+	4250 4100 4350 4100
+Wire Wire Line
+	4350 4100 4350 4200
+Wire Wire Line
+	4350 4200 5200 4200
 $EndSCHEMATC
