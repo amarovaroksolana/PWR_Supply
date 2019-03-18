@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:PWR_Supply-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -71,29 +72,14 @@ Text HLabel 4550 3000 0    50   Input ~ 0
 VCC
 Text HLabel 4550 3400 0    50   Input ~ 0
 GND
-Wire Wire Line
-	6150 3000 6300 3000
 Connection ~ 6150 3000
-Text HLabel 6450 3000 2    50   Input ~ 0
+Text HLabel 6450 3000 2    50   Output ~ 0
 +12
 Wire Wire Line
-	4550 3000 4700 3000
+	4700 3400 5000 3400
 Wire Wire Line
 	4550 3400 4700 3400
-$Comp
-L power:VCC #PWR0107
-U 1 1 5C8D31E3
-P 4700 3000
-F 0 "#PWR0107" H 4700 2850 50  0001 C CNN
-F 1 "VCC" H 4717 3173 50  0000 C CNN
-F 2 "" H 4700 3000 50  0001 C CNN
-F 3 "" H 4700 3000 50  0001 C CNN
-	1    4700 3000
-	1    0    0    -1  
-$EndComp
-Connection ~ 4700 3000
-Wire Wire Line
-	4700 3000 5000 3000
+Connection ~ 4700 3400
 $Comp
 L power:GND #PWR0108
 U 1 1 5C8D3214
@@ -105,9 +91,27 @@ F 3 "" H 4700 3400 50  0001 C CNN
 	1    4700 3400
 	1    0    0    -1  
 $EndComp
-Connection ~ 4700 3400
 Wire Wire Line
-	4700 3400 5000 3400
+	4700 3000 5000 3000
+Wire Wire Line
+	4550 3000 4700 3000
+Connection ~ 4700 3000
+$Comp
+L power:VCC #PWR0107
+U 1 1 5C8D31E3
+P 4700 3000
+F 0 "#PWR0107" H 4700 2850 50  0001 C CNN
+F 1 "VCC" H 4717 3173 50  0000 C CNN
+F 2 "" H 4700 3000 50  0001 C CNN
+F 3 "" H 4700 3000 50  0001 C CNN
+	1    4700 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3000 6450 3000
+Wire Wire Line
+	6150 3000 6300 3000
+Connection ~ 6300 3000
 $Comp
 L power:+12V #PWR0117
 U 1 1 5C909F4C
@@ -119,7 +123,4 @@ F 3 "" H 6300 3000 50  0001 C CNN
 	1    6300 3000
 	1    0    0    -1  
 $EndComp
-Connection ~ 6300 3000
-Wire Wire Line
-	6300 3000 6450 3000
 $EndSCHEMATC

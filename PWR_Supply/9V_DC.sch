@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:PWR_Supply-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -71,7 +72,7 @@ Text HLabel 4450 3000 0    50   Input ~ 0
 VCC
 Text HLabel 4450 3400 0    50   Input ~ 0
 GND
-Text HLabel 6300 3000 2    50   Input ~ 0
+Text HLabel 6300 3000 2    50   Output ~ 0
 +9
 Connection ~ 5950 3000
 Wire Wire Line
