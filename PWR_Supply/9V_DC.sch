@@ -41,9 +41,9 @@ L Regulator_Linear:L7809 U3
 U 1 1 5C857873
 P 5400 3000
 F 0 "U3" H 5400 3242 50  0000 C CNN
-F 1 "L7809" H 5400 3151 50  0000 C CNN
+F 1 "LM7809" H 5400 3151 50  0000 C CNN
 F 2 "" H 5425 2850 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 5400 2950 50  0001 C CNN
+F 3 "http://pdf1.alldatasheet.com/datasheet-pdf/view/33410/UTC/LM7809.html" H 5400 2950 50  0001 C CNN
 	1    5400 3000
 	1    0    0    -1  
 $EndComp

@@ -19,9 +19,9 @@ L Regulator_Linear:L7805 U1
 U 1 1 5C853E84
 P 5500 3250
 F 0 "U1" H 5500 3492 50  0000 C CNN
-F 1 "L7805" H 5500 3401 50  0000 C CNN
+F 1 "LM7805" H 5500 3401 50  0000 C CNN
 F 2 "" H 5525 3100 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 5500 3200 50  0001 C CNN
+F 3 "http://pdf1.alldatasheet.com/datasheet-pdf/view/82833/FAIRCHILD/LM7805.html" H 5500 3200 50  0001 C CNN
 	1    5500 3250
 	1    0    0    -1  
 $EndComp
